@@ -1,10 +1,10 @@
-const Router = require('express');
+const {Router} = require('express');
 const router = new Router();
 
 const brandRouter = require('./brandRouter');
 const userRouter = require('./userRouter');
 const deviceRouter = require('./deviceRouter');
-const typeRouter = require('./userRouter');
+const typeRouter = require('./typeRouter');
 
 router.use('/user', userRouter);
 router.use('/type', typeRouter);

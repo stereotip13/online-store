@@ -1,6 +1,9 @@
-class UserController {
-  async registration(req, res) {}
-  async login(req, res) {}
-  async check(req, res) {}
+const {Device} = require('../models/models')
+const ApiError = require('../error/ApiError');
+
+class DeviceController {
+  async create(req, res) {}
+  async getALL(req, res) {}
+  async getOne(req, res) {}
 }
-module.exports = new UserController();
+module.exports = new DeviceController();
